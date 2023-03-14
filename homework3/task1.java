@@ -41,10 +41,11 @@ public class task1 {
         for (int i = 0; i < listString.size(); i++) {
             try{
             Integer.parseInt((listString.get(i)).trim());
+            listString.remove(i);
+            i--;
             }
             catch(NumberFormatException e){
-                listString.remove(i);
-                i--;
+                System.out.println("Number is  delete!");
             }
 
             
